@@ -1,0 +1,39 @@
+<html>
+  <head>
+     <!-- Load style -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style>
+        table, th, td {
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+        }
+       </style>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h1><div id="console" align="center"></div></h1>
+    <!-- Add an image that we will use to test -->
+    <div id="videot" align="center">
+        <video autoplay playsinline muted id="webcam" width="359" height="350"></video>    
+    <!-- Load buttons-->
+        <table>
+            <tr>
+                <td><button id="class-a" class="btn-primary">Add A</button></td>
+                <td><button id="class-b" class="btn-primary">Add B</button></td>
+                <td><button id="class-c" class="btn-primary">Add C</button></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
